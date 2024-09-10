@@ -1,0 +1,334 @@
+/* General Styling */
+body {
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, serif;
+  background-color: #f9f3ef;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Layout */
+main {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: url(/Images/Img2.jpg) no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  color: rgba(30, 28, 28, 0.902);
+  text-align: center;
+  padding-top: 30px;
+}
+
+.logo {
+  text-align: left;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-left: 76px;
+}
+
+.languages {
+  float: right;
+  background-color: transparent;
+  color: rgb(36, 33, 33);
+  border: none;
+  margin-right: 20px;
+}
+
+.languages {
+  position: absolute;
+  top: 40px;
+  left: 85%;
+  cursor: pointer;
+}
+
+#lang {
+  position: absolute;
+  top: 40px;
+  right: 190px;
+}
+
+.header-content h1 {
+  font-size: 2.5em;
+}
+
+.header-content p {
+  font-size: 1.2em;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  color: blue;
+}
+
+#btn-get {
+  background-color: green;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+#btn-get:hover {
+  background-color: #155cb8;
+}
+
+.money-back {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #1e1e1b;
+}
+
+section {
+  margin-top: 0%;
+}
+/* Features Section */
+.features {
+  display: block;
+  overflow: hidden; /* Clears floating elements within the section */
+  padding: 50px 10%;
+  background-color: #fff;
+}
+
+.feature-box1 h2,
+.feature-box2 h2,
+.feature-box3 h2 {
+  font-size: 35px;
+}
+
+/* Features Section */
+.features {
+  display: block;
+  overflow: hidden;
+  padding: 50px 10%;
+  background-color: #fff;
+}
+
+.feature-box {
+  overflow: hidden; /* Ensure each feature box contains its floated children */
+  margin-bottom: 40px; /* Adds space between each feature-box */
+}
+
+/* Feature Box 1 (Image Float Left, Text on the Right) */
+.feature-box1 img {
+  float: left;
+  margin-right: 20px; /* Adds space between the image and the text */
+  width: 30%;
+  padding-left: 10%;
+  padding-right: 35px;
+}
+
+.feature-box1 h2,
+.feature-box1 p {
+  text-align: left;
+  width: -90%;
+  padding: -4%;
+  padding-left: 10px;
+}
+
+/* Feature Box 2 (Image Float Right, Text on the Left) */
+.feature-box2 img {
+  float: right;
+  margin-left: 20px; /* Adds space between the image and the text */
+  width: 30%;
+  padding-right: 10%;
+}
+
+.feature-box2 h2,
+.feature-box2 p {
+  text-align: left;
+  width: 30%;
+  padding-left: 20%;
+}
+
+/* Feature Box 3 (Image Float Left, Text on the Right) */
+.feature-box3 img {
+  float: left;
+  margin-right: 20px; /* Adds space between the image and the text */
+  width: 30%;
+  padding-left: 10%;
+  padding-right: 55px;
+}
+
+.feature-box3 h2,
+.feature-box3 p {
+  text-align: left;
+  width: -90%;
+  padding: -4%;
+  padding-left: 10px;
+}
+
+/* General Image and Button Styling */
+.feature-box img {
+  vertical-align: middle; /* Ensures image aligns well with text */
+}
+
+.feature-box h2 {
+  font-size: 30px;
+  margin: 0; /* Remove margin to align text closely */
+}
+
+.feature-box p {
+  margin-top: 10px; /* Add space between <h2> and <p> */
+}
+
+.feature-box button {
+  display: block; /* Ensures button is on its own line */
+  background-color: #00a860;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 20px; /* Space between text and button */
+}
+
+.feature-box a {
+  text-decoration: none;
+  color: #00a860;
+  display: block;
+  margin-top: 10px; /* Space between text and link */
+}
+
+/* Advantages Section */
+.advantages {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f9f3ef;
+  padding: 50px 10%;
+}
+
+.advantage-box {
+  text-align: center;
+  width: 30%;
+}
+
+.advantage-box img {
+  width: 200px;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+/* Footer Section */
+footer {
+  background-color: #f3e0dc;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+footer h1 {
+  color: #333;
+}
+
+footer img {
+  width: 90%;
+  margin: 20px 0;
+}
+
+footer p a {
+  color: #00a860;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: #1a73e8;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+  }
+
+  .logo {
+    font-size: 18px;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .languages {
+    top: 20px;
+    left: auto;
+    right: 10px;
+    margin-right: 0;
+  }
+
+  #lang {
+    top: 20px;
+    right: 150px;
+  }
+
+  .header-content h1 {
+    font-size: 2em;
+  }
+
+  .header-content p {
+    font-size: 1em;
+  }
+
+  #btn-get {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  /* Adjust Features Section for smaller screens */
+  .features {
+    padding: 20px 5%;
+  }
+
+  .feature-box1 img,
+  .feature-box2 img,
+  .feature-box3 img {
+    float: none;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    padding: 0;
+  }
+
+  .feature-box1 h2,
+  .feature-box2 h2,
+  .feature-box3 h2 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .feature-box1 p,
+  .feature-box2 p,
+  .feature-box3 p {
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /* Adjust advantage section */
+  .advantages {
+    display: block;
+    padding: 20px 5%;
+  }
+
+  .advantage-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Footer adjustments */
+  footer img {
+    width: 100%;
+  }
+
+  footer p a {
+    font-size: 1em;
+  }
+}
